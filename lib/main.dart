@@ -30,13 +30,7 @@ class MyApp extends StatelessWidget {
             ),
             builder: (ctx, child){
               ScreenUtil.init(ctx);
-              return Theme(data: ThemeData(
-                primarySwatch: Colors.blue,
-                textTheme: TextTheme(bodyText2: TextStyle(fontSize: 30.sp)),
-
-              ),
-                child: const LoginScreen(),
-              );
+              return const LoginScreen();
             },
 
           );
